@@ -1,0 +1,5 @@
+<section class="animal-list">
+  <app-animal-list-item
+    *ngFor="let animal of animals$ | async"
+    [animal]="animal"></app-animal-list-item>
+</section>

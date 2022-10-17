@@ -1,1 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+  overflow-x: hidden;
+
+}
+
+@font-face{
+  font-family:Nunito;
+  font-style:normal;
+  font-weight:400;
+  font-display:swap;
+  src:url(/assets/fonts/Nunito-regular.woff2) format("woff2"),
+  url(/assets/fonts/Nunito-regular.woff) format("woff")
+}
+
+@font-face{
+  font-family:Nunito;
+  font-style:normal;
+  font-weight:700;
+  font-display:swap;
+  src:url(/assets/fonts/Nunito-bold.woff2) format("woff2"),
+  url(/assets/fonts/Nunito-bold.woff) format("woff")
+}
+
+@font-face{
+  font-family:Nunito;
+  font-style:normal;
+  font-weight:800;
+  font-display:swap;
+  src:url(/assets/fonts/Nunito-extrabold.woff2) format("woff2"),
+  url(/assets/fonts/Nunito-extrabold.woff) format("woff")
+}
