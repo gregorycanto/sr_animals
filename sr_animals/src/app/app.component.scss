@@ -9,6 +9,7 @@ header {
     display: flex;
     justify-content: center;
     column-gap: 50px;
+    flex-wrap: wrap;
 
     a {
       margin-top: 34px;
@@ -30,6 +31,7 @@ footer {
     display: flex;
     width: 100%;
     justify-content: space-evenly;
+    flex-wrap: wrap;
   }
 
   nav {

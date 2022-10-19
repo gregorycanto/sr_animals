@@ -1,5 +1,7 @@
-<article class="animal-list-item" tabindex="0">
-  <img src="{{ animal.avatar }}" alt="{{ animal.name }}" />
-  <h2>{{ animal.name }}</h2>
-  <p>{{ animal.type }}</p>
-</article>
+<a routerLink="/animal/{{animal.id}}">
+  <article class="animal-list-item">
+      <img src="{{ animal.avatar }}" alt="{{ animal.name + ' picture' }}." />
+      <h2 attr.aria-label="Animal name: {{ animal.name }}." >{{ animal.name }}</h2>
+      <p attr.aria-label="Animal type: {{ animal.type }}.">{{ animal.type }}</p>
+  </article>
+</a>

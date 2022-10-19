@@ -1,5 +1,11 @@
-<section class="animal-list">
+<section class="animal-list" *ngIf="animals$ | async as animals; else loading">
   <app-animal-list-item
-    *ngFor="let animal of animals$ | async"
+    *ngFor="let animal of animals"
     [animal]="animal"></app-animal-list-item>
+</section>
+<ng-template #loading>
+  <app-spinner></app-spinner>
+</ng-template>
+<section class="button-section">
+  <button (click)="refreshList()">Update</button>
 </section>

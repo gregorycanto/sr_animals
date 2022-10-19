@@ -14,7 +14,15 @@ export class AnimalListComponent {
   animals$: Observable<Animal[]>;
 
   constructor(private service: AnimalsService) {
-    this.animals$ = this.service.getAnimalList().pipe(
+    this.animals$ = this.loadAnimalList();
+  }
+
+  public refreshList() {
+    this.animals$ = this.loadAnimalList();
+  }
+
+  loadAnimalList(): Observable<Animal[]> {
+    return this.service.getAnimalList().pipe(
       map((list: AnimalList) => list.items)
     );
   }

@@ -3,5 +3,26 @@
   flex-wrap: wrap;
   justify-content: space-around;
   row-gap: 88px;
+  column-gap: 100px;
   margin: 60px;
+}
+
+.button-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+
+  button {
+    border: none;
+    padding: 10px 48px 8px;
+    width: 260px;
+    height: 48px;
+    background: #00CCCC;
+    border-radius: 100px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    color: white;
+  }
 }

@@ -1,0 +1,10 @@
+<section class="animal-details-container">
+  <article *ngIf="animal$ | async as animal; else loading" class="animal-details" tabindex="0">
+    <img src="{{ animal.avatar }}" alt="{{ animal.name }}" />
+    <h2>{{ animal.name }}</h2>
+    <p>{{ animal.type }}</p>
+  </article>
+  <ng-template #loading>
+    <app-spinner></app-spinner>
+  </ng-template>
+</section>
