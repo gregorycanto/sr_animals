@@ -6,14 +6,11 @@ import { Animal } from 'src/app/model/animal';
   templateUrl: './animal-list-item.component.html',
   styleUrls: ['./animal-list-item.component.scss']
 })
-export class AnimalListItemComponent implements OnInit {
+export class AnimalListItemComponent {
 
   @Input()
   animal!: Animal;
 
   constructor() { }
-
-  ngOnInit(): void {
-  }
 
 }

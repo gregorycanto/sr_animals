@@ -14,6 +14,7 @@ describe('AnimalListItemComponent', () => {
 
     fixture = TestBed.createComponent(AnimalListItemComponent);
     component = fixture.componentInstance;
+    component.animal = { id: 1, name: 'Test Animal', avatar: 'http://url.to/avatar.jpg', type: 'Dog' };
     fixture.detectChanges();
   });
 
